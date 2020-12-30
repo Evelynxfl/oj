@@ -235,7 +235,7 @@ export default {
                 background-color:rgb(248, 179, 179);
     
                 p{
-                    color: red;
+                    color: black !important;
                 }
             }
             .errorP{

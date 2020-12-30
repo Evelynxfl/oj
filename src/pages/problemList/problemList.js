@@ -5,6 +5,10 @@ import problemList from './problemList.vue'
 import 'element-ui/lib/theme-chalk/index.css'
 // import router from '../../router/index.js'
 import axios from 'axios'
+axios.interceptors.request.use(config => {
+  config.headers.token = window.sessionStorage.getItem('token')
+  return config
+})
 Vue.prototype.$http = axios;
 
 

@@ -10,9 +10,7 @@ import router from './router/index'
 Vue.use(VueRouter)
 import axios from 'axios'
 axios.interceptors.request.use(config => {
-  // console.log("jkjhhjj");
-  // console.log(config);
-  config.headers.Authorization = window.sessionStorage.getItem('token')
+  config.headers.token = window.sessionStorage.getItem('token')
   return config
 })
 Vue.prototype.$http = axios;

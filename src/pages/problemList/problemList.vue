@@ -17,10 +17,10 @@
 
 <script>
 import navbar from '../../components/navBar.vue'
-import cetagoryCards from '../../modules/cetagoryCard.vue'
+import cetagoryCards from '../../components/cetagoryCard.vue'
 import '../../assets/font/iconfont.css'
-import problem from '../../modules/problem.vue'
-import cebianlan from '../../modules/cebianlan.vue'
+import problem from '../../components/problem.vue'
+import cebianlan from '../../components/cebianlan.vue'
 export default {
   name: 'problemList',
   components:{

@@ -4,8 +4,6 @@ import 'element-ui/lib/theme-chalk/index.css';
 import jwtDecode from 'jwt-decode'
 import axios from 'axios'
 axios.interceptors.request.use(config => {
-  // console.log("jkjhhjj");
-  // console.log(config);
   config.headers.token = window.sessionStorage.getItem('token')
   return config
 })

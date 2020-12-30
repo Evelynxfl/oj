@@ -17,8 +17,8 @@
 
 <script>
 import navbar from '../../components/navBar.vue'
-import descLeft from '../../modules/desc_left.vue'
-import descRight from '../../modules/desc_right.vue'
+import descLeft from '../../components/desc_left.vue'
+import descRight from '../../components/desc_right.vue'
 export default {
   data() {
     return {
